@@ -8,7 +8,7 @@ namespace CalculadoraNumrosPrimos
 {
     public class NumerosPrimosTests
     {
-        
+        //
 
         [Theory]
         [InlineData(3)]
