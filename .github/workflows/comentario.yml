@@ -1,0 +1,12 @@
+name: CI
+on: pull_request
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+ 
+    steps: 
+      - name: Comentando a PR
+        uses: thollander/actions-comment-pull-request@master
+        with:
+          message: 'Comentando na PR'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
